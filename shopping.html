@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container > a{
+            display: block;
+            color: black;
+            text-decoration: none;
+           width: 60px;
+           background-color: rgb(236, 225, 217);
+           border: 2 px solid red;
+           text-align: center;
+        }
+        .container{
+            border: 2px solid ;
+            display: block;
+            width: 100px;
+            background-color: gray;
+            display: none;
+        }
+        a{
+            border: 2px solid ;
+            margin: 20px;
+        }
+        .but{
+            padding:10px;
+            margin: 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+      .but:focus-within + .container {
+            background-color: red;
+            display: block;
+        }
+        .flip{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="but">shopping</button>
+    <div class="container">
+        <a href="https://example.com">amazon</a>
+        <a href="https://example.com">mynthra</a>
+
+    </div>
+
+</body>
+</html>
